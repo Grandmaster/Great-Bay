@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS items_db;
+CREATE DATABASE items_db;
+USE items_db;
+
+CREATE TABLE items(
+    id INTEGER(10) AUTO_INCREMENT NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    price INTEGER(10) NOT NULL,
+    bid_items BOOLEAN DEFAULT 0 NOT NULL,
+    post_items BOOLEAN DEFAULT 0 NOT NULL,
+    PRIMARY KEY (id)
+);
